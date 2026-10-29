@@ -5,21 +5,15 @@
 int main(void)
 {
     int i;
-    int sum = 0;
-    int score[SIZE];
-
-   printf("enter the score of 5 student.\n");
-    
-
+    int a[SIZE] = {1,2,3,4,5};
+    int b[SIZE] = {1,2,3,7,5};
+   
     for (i=0;i<SIZE;i++){
-        scanf("%d", &score[i]);
-        sum += score[i];
+
+        if (a[i] != b[i])
+            printf("index %i different\n", i);
+
     }
-    
 
-    printf("average is %d\n", sum/SIZE);
-
-
-    return 0;
-
+   
 }
